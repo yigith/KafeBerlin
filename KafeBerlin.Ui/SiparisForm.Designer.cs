@@ -69,7 +69,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(524, 8);
+            this.label3.Location = new System.Drawing.Point(672, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.lblMasaNo.BackColor = System.Drawing.Color.DarkOrange;
             this.lblMasaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblMasaNo.ForeColor = System.Drawing.Color.White;
-            this.lblMasaNo.Location = new System.Drawing.Point(407, 52);
+            this.lblMasaNo.Location = new System.Drawing.Point(555, 52);
             this.lblMasaNo.Name = "lblMasaNo";
             this.lblMasaNo.Size = new System.Drawing.Size(266, 175);
             this.lblMasaNo.TabIndex = 3;
@@ -93,7 +93,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(457, 267);
+            this.label5.Location = new System.Drawing.Point(605, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 18);
             this.label5.TabIndex = 4;
@@ -104,7 +104,7 @@
             this.lblOdemeTutari.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblOdemeTutari.AutoSize = true;
             this.lblOdemeTutari.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOdemeTutari.Location = new System.Drawing.Point(572, 267);
+            this.lblOdemeTutari.Location = new System.Drawing.Point(720, 267);
             this.lblOdemeTutari.Name = "lblOdemeTutari";
             this.lblOdemeTutari.Size = new System.Drawing.Size(44, 18);
             this.lblOdemeTutari.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMasaNo.FormattingEnabled = true;
-            this.cboMasaNo.Location = new System.Drawing.Point(527, 24);
+            this.cboMasaNo.Location = new System.Drawing.Point(675, 24);
             this.cboMasaNo.Name = "cboMasaNo";
             this.cboMasaNo.Size = new System.Drawing.Size(65, 21);
             this.cboMasaNo.TabIndex = 7;
@@ -132,9 +132,19 @@
             // nudAdet
             // 
             this.nudAdet.Location = new System.Drawing.Point(140, 25);
+            this.nudAdet.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudAdet.Name = "nudAdet";
             this.nudAdet.Size = new System.Drawing.Size(73, 20);
             this.nudAdet.TabIndex = 8;
+            this.nudAdet.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btnEkle
             // 
@@ -144,11 +154,12 @@
             this.btnEkle.TabIndex = 9;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnTasi
             // 
             this.btnTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTasi.Location = new System.Drawing.Point(598, 22);
+            this.btnTasi.Location = new System.Drawing.Point(746, 22);
             this.btnTasi.Name = "btnTasi";
             this.btnTasi.Size = new System.Drawing.Size(75, 23);
             this.btnTasi.TabIndex = 10;
@@ -161,7 +172,7 @@
             this.btnSiparisIptal.BackColor = System.Drawing.Color.DarkRed;
             this.btnSiparisIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiparisIptal.ForeColor = System.Drawing.Color.White;
-            this.btnSiparisIptal.Location = new System.Drawing.Point(407, 330);
+            this.btnSiparisIptal.Location = new System.Drawing.Point(555, 330);
             this.btnSiparisIptal.Name = "btnSiparisIptal";
             this.btnSiparisIptal.Size = new System.Drawing.Size(130, 38);
             this.btnSiparisIptal.TabIndex = 11;
@@ -174,7 +185,7 @@
             this.btnOdemeAl.BackColor = System.Drawing.Color.Green;
             this.btnOdemeAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOdemeAl.ForeColor = System.Drawing.Color.White;
-            this.btnOdemeAl.Location = new System.Drawing.Point(543, 330);
+            this.btnOdemeAl.Location = new System.Drawing.Point(691, 330);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(130, 38);
             this.btnOdemeAl.TabIndex = 12;
@@ -187,7 +198,7 @@
             this.btnAnasayfayaDon.BackColor = System.Drawing.Color.Gold;
             this.btnAnasayfayaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnAnasayfayaDon.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnAnasayfayaDon.Location = new System.Drawing.Point(407, 374);
+            this.btnAnasayfayaDon.Location = new System.Drawing.Point(555, 374);
             this.btnAnasayfayaDon.Name = "btnAnasayfayaDon";
             this.btnAnasayfayaDon.Size = new System.Drawing.Size(266, 38);
             this.btnAnasayfayaDon.TabIndex = 13;
@@ -196,20 +207,25 @@
             // 
             // dgvDetaylar
             // 
+            this.dgvDetaylar.AllowUserToAddRows = false;
             this.dgvDetaylar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDetaylar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDetaylar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetaylar.Location = new System.Drawing.Point(12, 52);
             this.dgvDetaylar.Name = "dgvDetaylar";
-            this.dgvDetaylar.Size = new System.Drawing.Size(374, 360);
+            this.dgvDetaylar.ReadOnly = true;
+            this.dgvDetaylar.RowHeadersVisible = false;
+            this.dgvDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDetaylar.Size = new System.Drawing.Size(522, 360);
             this.dgvDetaylar.TabIndex = 14;
             // 
             // SiparisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 424);
+            this.ClientSize = new System.Drawing.Size(833, 424);
             this.Controls.Add(this.dgvDetaylar);
             this.Controls.Add(this.btnAnasayfayaDon);
             this.Controls.Add(this.btnOdemeAl);
