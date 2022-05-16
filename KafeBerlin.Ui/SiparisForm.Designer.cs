@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(137, 9);
+            this.label2.Location = new System.Drawing.Point(230, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
@@ -121,7 +121,7 @@
             this.cboUrun.FormattingEnabled = true;
             this.cboUrun.Location = new System.Drawing.Point(13, 25);
             this.cboUrun.Name = "cboUrun";
-            this.cboUrun.Size = new System.Drawing.Size(121, 21);
+            this.cboUrun.Size = new System.Drawing.Size(214, 21);
             this.cboUrun.TabIndex = 6;
             // 
             // cboMasaNo
@@ -136,7 +136,7 @@
             // 
             // nudAdet
             // 
-            this.nudAdet.Location = new System.Drawing.Point(140, 25);
+            this.nudAdet.Location = new System.Drawing.Point(233, 26);
             this.nudAdet.Minimum = new decimal(new int[] {
             1,
             0,
@@ -153,7 +153,7 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(219, 23);
+            this.btnEkle.Location = new System.Drawing.Point(312, 24);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(75, 23);
             this.btnEkle.TabIndex = 9;
@@ -244,9 +244,9 @@
             // Column2
             // 
             this.Column2.DataPropertyName = "BirimFiyat";
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "Birim Fiyat";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;

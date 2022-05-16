@@ -59,5 +59,10 @@ namespace KafeBerlin.Ui
                 lvi.Selected = false;
             }
         }
+
+        private void tsmiUrunler_Click(object sender, EventArgs e)
+        {
+            new UrunlerForm(db).ShowDialog();
+        }
     }
 }
