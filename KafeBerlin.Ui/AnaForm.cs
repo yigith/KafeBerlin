@@ -64,5 +64,10 @@ namespace KafeBerlin.Ui
         {
             new UrunlerForm(db).ShowDialog();
         }
+
+        private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
+        {
+            new GecmisSiparislerForm(db).ShowDialog();
+        }
     }
 }
