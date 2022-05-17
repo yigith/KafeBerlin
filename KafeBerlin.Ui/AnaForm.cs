@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KafeBerlin.Data;
+using Newtonsoft.Json;
 
 namespace KafeBerlin.Ui
 {
@@ -17,9 +19,22 @@ namespace KafeBerlin.Ui
 
         public AnaForm()
         {
+            VerileriYukle();
             InitializeComponent();
             MasalariYukle();
-            OrnekUrunleriYukle();
+        }
+
+        private void VerileriYukle()
+        {
+            try
+            {
+                string json = File.ReadAllText("data.json");
+                db = JsonConvert.DeserializeObject<KafeVeri>(json);
+            }
+            catch (Exception)
+            {
+                OrnekUrunleriYukle();
+            }
         }
 
         private void OrnekUrunleriYukle()
@@ -33,7 +48,7 @@ namespace KafeBerlin.Ui
             for (int i = 1; i <= db.MasaAdet; i++)
             {
                 var lvi = new ListViewItem($"Masa {i}");
-                lvi.ImageKey = "bos";
+                lvi.ImageKey = db.AktifSiparisler.Any(x => x.MasaNo == i) ? "dolu" : "bos";
                 lvi.Tag = i; // list view item üzerinde daha sonra erişebilmek adına masa noyu saklıyoruz
                 lvwMasalar.Items.Add(lvi);
             }
@@ -68,6 +83,12 @@ namespace KafeBerlin.Ui
         private void tsmiGecmisSiparisler_Click(object sender, EventArgs e)
         {
             new GecmisSiparislerForm(db).ShowDialog();
+        }
+
+        private void AnaForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            string json = JsonConvert.SerializeObject(db);
+            File.WriteAllText("data.json", json);
         }
     }
 }

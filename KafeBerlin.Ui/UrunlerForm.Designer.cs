@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUrunAd = new System.Windows.Forms.TextBox();
@@ -110,6 +110,7 @@
             this.dgvUrunler.Size = new System.Drawing.Size(416, 296);
             this.dgvUrunler.TabIndex = 5;
             this.dgvUrunler.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellDoubleClick);
+            this.dgvUrunler.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dgvUrunler_UserDeletingRow);
             // 
             // Column1
             // 
@@ -121,8 +122,8 @@
             // Column2
             // 
             this.Column2.DataPropertyName = "BirimFiyat";
-            dataGridViewCellStyle3.Format = "c2";
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "c2";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "Birim Fiyatı";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
